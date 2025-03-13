@@ -10,9 +10,10 @@ This toolkit contains software utilities for serial communication diagnostics wi
 ├── data/             # Measurement data
 │   └── raw/          # Raw capture files
 ├── docs/             # Technical documentation
-│   ├── protocol_analysis.md    # Communication protocol specification
-│   ├── test_manual.md          # Troubleshooting procedures
-│   └── test_protocol.md        # Test methodology and results
+│   ├── OE10_Software_Protocol.pdf  # Official protocol documentation
+│   ├── protocol_analysis.md        # Communication protocol specification
+│   └── test_protocol.md           # Test methodology and results
+├── raw_data/         # Original data files
 ├── results/          # Test result data
 │   └── logs/         # Application log files
 ├── src/              # Source code
@@ -21,6 +22,7 @@ This toolkit contains software utilities for serial communication diagnostics wi
 │   ├── pantilt_protocol.py     # Protocol implementation
 │   ├── pantilt_simulator.py    # Sequence simulator
 │   └── rs232_verify.py         # Hardware verification tool
+├── tests/            # Test suite directory
 └── README.md         # This file
 ```
 
