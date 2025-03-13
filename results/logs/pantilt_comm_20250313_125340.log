@@ -1,0 +1,58 @@
+2025-03-13 12:53:40,079 - INFO - === Pan-Tilt Communication Tester ===
+2025-03-13 12:53:40,079 - INFO - Log files: logs/pantilt_comm_20250313_125340.log and raw_comm_20250313_125340.bin
+2025-03-13 12:53:40,079 - INFO - 
+===========================================
+2025-03-13 12:53:40,079 - INFO - Testing with 9600 baud
+2025-03-13 12:53:40,079 - INFO - ===========================================
+2025-03-13 12:53:40,113 - INFO - Connected to /dev/ttyUSB0 (9600 baud, 8N1)
+2025-03-13 12:53:40,114 - INFO - DTR: False, RTS: False
+2025-03-13 12:53:40,114 - INFO - =========================================
+2025-03-13 12:53:40,114 - INFO - STARTING BASIC COMMUNICATION TEST
+2025-03-13 12:53:40,114 - INFO - =========================================
+2025-03-13 12:53:40,114 - INFO - Attempting to sync with device (5 attempts)...
+2025-03-13 12:53:40,114 - INFO - Sync attempt 1/5
+2025-03-13 12:53:40,114 - INFO - Sending SYNC_1 (block): 0x3C
+2025-03-13 12:53:40,114 - DEBUG - Wrote 1 bytes
+2025-03-13 12:53:40,115 - DEBUG - Waiting for response (timeout: 1.0s, min bytes: 1)
+2025-03-13 12:53:41,121 - WARNING - No response received within 1.0s
+2025-03-13 12:53:41,621 - INFO - Sync attempt 2/5
+2025-03-13 12:53:41,621 - INFO - Sending SYNC_2 (block): 0x3C
+2025-03-13 12:53:41,623 - DEBUG - Wrote 1 bytes
+2025-03-13 12:53:41,623 - DEBUG - Waiting for response (timeout: 1.0s, min bytes: 1)
+2025-03-13 12:53:42,629 - WARNING - No response received within 1.0s
+2025-03-13 12:53:43,129 - INFO - Sync attempt 3/5
+2025-03-13 12:53:43,129 - INFO - Sending SYNC_3 (block): 0x3C
+2025-03-13 12:53:43,130 - DEBUG - Wrote 1 bytes
+2025-03-13 12:53:43,130 - DEBUG - Waiting for response (timeout: 1.0s, min bytes: 1)
+2025-03-13 12:53:44,136 - WARNING - No response received within 1.0s
+2025-03-13 12:53:44,636 - INFO - Sync attempt 4/5
+2025-03-13 12:53:44,636 - INFO - Sending SYNC_4 (block): 0x3C
+2025-03-13 12:53:44,637 - DEBUG - Wrote 1 bytes
+2025-03-13 12:53:44,637 - DEBUG - Waiting for response (timeout: 1.0s, min bytes: 1)
+2025-03-13 12:53:45,643 - WARNING - No response received within 1.0s
+2025-03-13 12:53:46,143 - INFO - Sync attempt 5/5
+2025-03-13 12:53:46,144 - INFO - Sending SYNC_5 (block): 0x3C
+2025-03-13 12:53:46,145 - DEBUG - Wrote 1 bytes
+2025-03-13 12:53:46,145 - DEBUG - Waiting for response (timeout: 1.0s, min bytes: 1)
+2025-03-13 12:53:47,151 - WARNING - No response received within 1.0s
+2025-03-13 12:53:47,652 - WARNING - Failed to sync with device
+2025-03-13 12:53:47,652 - DEBUG - Serial buffers cleared
+2025-03-13 12:53:47,652 - INFO - Step 1: Sending initialization command
+2025-03-13 12:53:47,652 - INFO - Sending INIT (block): 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:53:47,653 - DEBUG - Wrote 26 bytes
+2025-03-13 12:53:47,653 - DEBUG - Waiting for response (timeout: 3.0s, min bytes: 1)
+2025-03-13 12:53:50,660 - WARNING - No response received within 3.0s
+2025-03-13 12:53:50,660 - WARNING - No response to initialization, trying alternative command...
+2025-03-13 12:53:50,660 - INFO - Sending ALT_INIT (block): 0x3C 0xC0 0x5C 0x80 0x5C 0xC0 0x5C 0x82 0xCA 0x5C 0x5C 0xC8 0x5C 0xE2 0x7C
+2025-03-13 12:53:50,661 - DEBUG - Wrote 15 bytes
+2025-03-13 12:53:50,661 - DEBUG - Waiting for response (timeout: 3.0s, min bytes: 1)
+2025-03-13 12:53:53,670 - WARNING - No response received within 3.0s
+2025-03-13 12:53:53,670 - ERROR - No response to alternative initialization command
+2025-03-13 12:53:53,671 - INFO - Toggling RTS/DTR lines...
+2025-03-13 12:53:54,478 - INFO - RTS/DTR toggled, now at DTR=False, RTS=False
+2025-03-13 12:53:55,479 - INFO - Last attempt: Sending heartbeat command directly
+2025-03-13 12:53:55,479 - INFO - Sending HEARTBEAT (block): 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:53:55,479 - DEBUG - Wrote 25 bytes
+2025-03-13 12:53:55,480 - DEBUG - Waiting for response (timeout: 3.0s, min bytes: 1)
+2025-03-13 12:53:57,794 - INFO - Program interrupted by user
+2025-03-13 12:53:58,176 - INFO - Disconnected from /dev/ttyUSB0

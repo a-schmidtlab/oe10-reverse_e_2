@@ -1,0 +1,516 @@
+2025-03-13 12:25:29,888 - INFO - ============================================================
+2025-03-13 12:25:29,888 - INFO - Pan-Tilt Control Simulator
+2025-03-13 12:25:29,888 - INFO - ============================================================
+2025-03-13 12:25:29,888 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:25:29,888 - INFO - Date: 2025-03-13 12:25:29
+2025-03-13 12:25:29,916 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:25:29,916 - INFO - ============================================================
+2025-03-13 12:25:29,916 - INFO - STARTING TILT TO 10° SEQUENCE
+2025-03-13 12:25:29,916 - INFO - ============================================================
+2025-03-13 12:25:29,916 - INFO - Step 1: Sending initialization command
+2025-03-13 12:25:29,916 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:25:30,417 - WARNING - No response received within 0.5002s
+2025-03-13 12:25:30,417 - INFO - 
+Step 2: Sending heartbeat commands
+2025-03-13 12:25:30,418 - INFO - Heartbeat 1/3
+2025-03-13 12:25:30,418 - INFO - Sending heartbeat command: 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:25:30,919 - WARNING - No response received within 0.5005s
+2025-03-13 12:25:31,919 - INFO - Heartbeat 2/3
+2025-03-13 12:25:31,919 - INFO - Sending heartbeat command: 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:25:32,420 - WARNING - No response received within 0.5010s
+2025-03-13 12:25:33,421 - INFO - Heartbeat 3/3
+2025-03-13 12:25:33,421 - INFO - Sending heartbeat command: 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:25:33,922 - WARNING - No response received within 0.5010s
+2025-03-13 12:25:34,922 - INFO - 
+Step 3: Sending tilt to 10° command
+2025-03-13 12:25:34,923 - INFO - Sending tilt_10 command: 0x3C 0x80 0x5C 0xC0 0x5C 0xE0 0x5C 0x60 0x5C 0x0A 0x0A 0x8C 0x1C 0x0C 0x5C 0x5C 0x5C 0xE2 0x7C
+2025-03-13 12:25:35,424 - WARNING - No response received within 0.5002s
+2025-03-13 12:25:35,424 - INFO - 
+Step 4: Resuming heartbeat commands
+2025-03-13 12:25:35,424 - INFO - Post-tilt heartbeat 1/2
+2025-03-13 12:25:35,424 - INFO - Sending heartbeat command: 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:25:35,925 - WARNING - No response received within 0.5007s
+2025-03-13 12:25:36,926 - INFO - Post-tilt heartbeat 2/2
+2025-03-13 12:25:36,926 - INFO - Sending heartbeat command: 0x3C 0x80 0x5C 0xC0 0x5C 0xB0 0x5C 0x60 0x5C 0xCA 0x2A 0x18 0x00 0x00 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x5C 0x08 0x5C 0xE2 0x7C
+2025-03-13 12:25:37,427 - WARNING - No response received within 0.5006s
+2025-03-13 12:25:38,428 - INFO - 
+Tilt sequence completed
+2025-03-13 12:25:38,428 - INFO - ============================================================
+2025-03-13 12:25:38,428 - INFO - COMMUNICATION SUMMARY REPORT
+2025-03-13 12:25:38,428 - INFO - ============================================================
+2025-03-13 12:25:38,429 - INFO - Total transactions: 7
+2025-03-13 12:25:38,429 - INFO - Commands sent (TX): 7
+2025-03-13 12:25:38,429 - INFO - Responses received (RX): 0
+2025-03-13 12:25:38,429 - INFO - 
+Command type summary:
+2025-03-13 12:25:38,429 - INFO -   initialization: 1
+2025-03-13 12:25:38,429 - INFO -   heartbeat: 5
+2025-03-13 12:25:38,429 - INFO -   tilt_10: 1
+2025-03-13 12:25:38,430 - INFO - 
+Detailed transaction log:
+2025-03-13 12:25:38,430 - INFO -    1. [12:25:29.916] TX initialization (26 bytes)
+2025-03-13 12:25:38,430 - INFO -    2. [12:25:30.418] TX heartbeat      (25 bytes)
+2025-03-13 12:25:38,430 - INFO -    3. [12:25:31.919] TX heartbeat      (25 bytes)
+2025-03-13 12:25:38,430 - INFO -    4. [12:25:33.421] TX heartbeat      (25 bytes)
+2025-03-13 12:25:38,430 - INFO -    5. [12:25:34.923] TX tilt_10        (19 bytes)
+2025-03-13 12:25:38,430 - INFO -    6. [12:25:35.424] TX heartbeat      (25 bytes)
+2025-03-13 12:25:38,431 - INFO -    7. [12:25:36.926] TX heartbeat      (25 bytes)
+2025-03-13 12:25:38,721 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:25:38,721 - INFO - Program terminated
+2025-03-13 12:31:26,093 - INFO - ============================================================
+2025-03-13 12:31:26,093 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:31:26,093 - INFO - ============================================================
+2025-03-13 12:31:26,094 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:31:26,094 - INFO - Date: 2025-03-13 12:31:26
+2025-03-13 12:31:26,113 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:31:26,114 - INFO - ============================================================
+2025-03-13 12:31:26,114 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:31:26,114 - INFO - ============================================================
+2025-03-13 12:31:26,114 - INFO - Step 1: Sending initialization command
+2025-03-13 12:31:26,114 - INFO - Sending initialization command: 0x3C 0xC0 0x5C 0x80 0x5C 0xC0 0x5C 0x82 0xCA 0x5C 0x5C 0xC8 0x5C 0xE2 0x7C
+2025-03-13 12:31:26,615 - WARNING - No response received within 0.5009s
+2025-03-13 12:31:26,616 - ERROR - No response to initialization command
+2025-03-13 12:31:26,913 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:31:26,913 - INFO - Program terminated
+2025-03-13 12:32:16,595 - INFO - ============================================================
+2025-03-13 12:32:16,595 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:32:16,595 - INFO - ============================================================
+2025-03-13 12:32:16,595 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:32:16,595 - INFO - Date: 2025-03-13 12:32:16
+2025-03-13 12:32:16,615 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:32:16,616 - INFO - ============================================================
+2025-03-13 12:32:16,616 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:32:16,616 - INFO - ============================================================
+2025-03-13 12:32:16,616 - INFO - Step 1: Sending initialization command
+2025-03-13 12:32:16,616 - INFO - Sending initialization command: 0x3C 0xC0 0x5C 0x80 0x5C 0xC0 0x5C 0x82 0xCA 0x5C 0x5C 0xC8 0x5C 0xE2 0x7C
+2025-03-13 12:32:17,117 - WARNING - No response received within 0.5009s
+2025-03-13 12:32:17,118 - ERROR - No response to initialization command
+2025-03-13 12:32:17,409 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:32:17,409 - INFO - Program terminated
+2025-03-13 12:34:29,145 - INFO - ============================================================
+2025-03-13 12:34:29,145 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:34:29,146 - INFO - ============================================================
+2025-03-13 12:34:29,146 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:34:29,146 - INFO - Date: 2025-03-13 12:34:29
+2025-03-13 12:34:29,165 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:34:29,166 - INFO - ============================================================
+2025-03-13 12:34:29,166 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:34:29,166 - INFO - ============================================================
+2025-03-13 12:34:29,166 - INFO - Step 1: Sending initialization command
+2025-03-13 12:34:29,166 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:34:31,167 - WARNING - No response received within 2.0006s
+2025-03-13 12:34:31,167 - ERROR - No response to initialization command
+2025-03-13 12:34:31,457 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:34:31,457 - INFO - Program terminated
+2025-03-13 12:35:33,241 - INFO - ============================================================
+2025-03-13 12:35:33,242 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:35:33,242 - INFO - ============================================================
+2025-03-13 12:35:33,242 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:35:33,242 - INFO - Date: 2025-03-13 12:35:33
+2025-03-13 12:35:33,262 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:35:35,262 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:35:35,263 - INFO - ============================================================
+2025-03-13 12:35:35,263 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:35:35,263 - INFO - ============================================================
+2025-03-13 12:35:35,263 - INFO - Step 1: Sending initialization command
+2025-03-13 12:35:35,263 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:35:37,264 - WARNING - No response received within 2.0007s
+2025-03-13 12:35:37,264 - ERROR - No response to initialization command
+2025-03-13 12:35:37,536 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:35:37,537 - INFO - Program terminated
+2025-03-13 12:35:48,656 - INFO - ============================================================
+2025-03-13 12:35:48,656 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:35:48,656 - INFO - ============================================================
+2025-03-13 12:35:48,656 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:35:48,656 - INFO - Date: 2025-03-13 12:35:48
+2025-03-13 12:35:48,687 - INFO - Connected to /dev/ttyUSB0 at 1200 baud
+2025-03-13 12:35:50,687 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:35:50,688 - INFO - ============================================================
+2025-03-13 12:35:50,688 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:35:50,688 - INFO - ============================================================
+2025-03-13 12:35:50,688 - INFO - Step 1: Sending initialization command
+2025-03-13 12:35:50,688 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:35:52,688 - WARNING - No response received within 2.0000s
+2025-03-13 12:35:52,689 - ERROR - No response to initialization command
+2025-03-13 12:35:54,725 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:35:54,725 - INFO - Program terminated
+2025-03-13 12:35:55,780 - INFO - ============================================================
+2025-03-13 12:35:55,780 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:35:55,780 - INFO - ============================================================
+2025-03-13 12:35:55,780 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:35:55,780 - INFO - Date: 2025-03-13 12:35:55
+2025-03-13 12:35:55,812 - INFO - Connected to /dev/ttyUSB0 at 2400 baud
+2025-03-13 12:35:57,812 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:35:57,812 - INFO - ============================================================
+2025-03-13 12:35:57,812 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:35:57,812 - INFO - ============================================================
+2025-03-13 12:35:57,812 - INFO - Step 1: Sending initialization command
+2025-03-13 12:35:57,812 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:35:59,813 - WARNING - No response received within 2.0002s
+2025-03-13 12:35:59,813 - ERROR - No response to initialization command
+2025-03-13 12:36:00,897 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:00,897 - INFO - Program terminated
+2025-03-13 12:36:01,967 - INFO - ============================================================
+2025-03-13 12:36:01,968 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:36:01,968 - INFO - ============================================================
+2025-03-13 12:36:01,968 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:36:01,968 - INFO - Date: 2025-03-13 12:36:01
+2025-03-13 12:36:01,999 - INFO - Connected to /dev/ttyUSB0 at 4800 baud
+2025-03-13 12:36:03,999 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:36:03,999 - INFO - ============================================================
+2025-03-13 12:36:03,999 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:36:04,000 - INFO - ============================================================
+2025-03-13 12:36:04,000 - INFO - Step 1: Sending initialization command
+2025-03-13 12:36:04,000 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:36:06,001 - WARNING - No response received within 2.0007s
+2025-03-13 12:36:06,001 - ERROR - No response to initialization command
+2025-03-13 12:36:06,561 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:06,561 - INFO - Program terminated
+2025-03-13 12:36:07,616 - INFO - ============================================================
+2025-03-13 12:36:07,616 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:36:07,616 - INFO - ============================================================
+2025-03-13 12:36:07,616 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:36:07,616 - INFO - Date: 2025-03-13 12:36:07
+2025-03-13 12:36:07,647 - INFO - Connected to /dev/ttyUSB0 at 19200 baud
+2025-03-13 12:36:09,647 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:36:09,648 - INFO - ============================================================
+2025-03-13 12:36:09,648 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:36:09,648 - INFO - ============================================================
+2025-03-13 12:36:09,648 - INFO - Step 1: Sending initialization command
+2025-03-13 12:36:09,648 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:36:10,057 - INFO - 
+Program interrupted by user
+2025-03-13 12:36:10,196 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:10,197 - INFO - Program terminated
+2025-03-13 12:36:11,249 - INFO - ============================================================
+2025-03-13 12:36:11,250 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:36:11,250 - INFO - ============================================================
+2025-03-13 12:36:11,250 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:36:11,250 - INFO - Date: 2025-03-13 12:36:11
+2025-03-13 12:36:11,280 - INFO - Connected to /dev/ttyUSB0 at 38400 baud
+2025-03-13 12:36:13,281 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:36:13,281 - INFO - ============================================================
+2025-03-13 12:36:13,281 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:36:13,281 - INFO - ============================================================
+2025-03-13 12:36:13,281 - INFO - Step 1: Sending initialization command
+2025-03-13 12:36:13,281 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:36:15,282 - WARNING - No response received within 2.0002s
+2025-03-13 12:36:15,282 - ERROR - No response to initialization command
+2025-03-13 12:36:15,389 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:15,389 - INFO - Program terminated
+2025-03-13 12:36:16,463 - INFO - ============================================================
+2025-03-13 12:36:16,463 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:36:16,463 - INFO - ============================================================
+2025-03-13 12:36:16,463 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:36:16,463 - INFO - Date: 2025-03-13 12:36:16
+2025-03-13 12:36:16,494 - INFO - Connected to /dev/ttyUSB0 at 57600 baud
+2025-03-13 12:36:18,494 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:36:18,494 - INFO - ============================================================
+2025-03-13 12:36:18,494 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:36:18,494 - INFO - ============================================================
+2025-03-13 12:36:18,494 - INFO - Step 1: Sending initialization command
+2025-03-13 12:36:18,494 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:36:20,495 - WARNING - No response received within 2.0002s
+2025-03-13 12:36:20,495 - ERROR - No response to initialization command
+2025-03-13 12:36:20,601 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:20,601 - INFO - Program terminated
+2025-03-13 12:36:21,667 - INFO - ============================================================
+2025-03-13 12:36:21,668 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:36:21,668 - INFO - ============================================================
+2025-03-13 12:36:21,668 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:36:21,668 - INFO - Date: 2025-03-13 12:36:21
+2025-03-13 12:36:21,699 - INFO - Connected to /dev/ttyUSB0 at 115200 baud
+2025-03-13 12:36:23,699 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:36:23,700 - INFO - ============================================================
+2025-03-13 12:36:23,700 - INFO - STARTING INITIALIZATION AND HEARTBEAT SEQUENCE
+2025-03-13 12:36:23,700 - INFO - ============================================================
+2025-03-13 12:36:23,700 - INFO - Step 1: Sending initialization command
+2025-03-13 12:36:23,700 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:36:25,700 - WARNING - No response received within 2.0001s
+2025-03-13 12:36:25,701 - ERROR - No response to initialization command
+2025-03-13 12:36:25,804 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:36:25,805 - INFO - Program terminated
+2025-03-13 12:37:02,343 - INFO - ============================================================
+2025-03-13 12:37:02,344 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:37:02,344 - INFO - ============================================================
+2025-03-13 12:37:02,344 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:37:02,344 - INFO - Date: 2025-03-13 12:37:02
+2025-03-13 12:37:02,344 - INFO - 
+============================================================
+2025-03-13 12:37:02,344 - INFO - Trying configuration: 9600 baud, 8N1
+2025-03-13 12:37:02,344 - INFO - ============================================================
+2025-03-13 12:37:02,376 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:04,376 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:04,376 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:04,376 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:04,377 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:04,377 - DEBUG - Waiting for response...
+2025-03-13 12:37:06,377 - WARNING - No response received within 2.0001s
+2025-03-13 12:37:06,377 - ERROR - No response to initialization command
+2025-03-13 12:37:06,657 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:06,657 - INFO - 
+============================================================
+2025-03-13 12:37:06,657 - INFO - Trying configuration: 9600 baud, 8E1
+2025-03-13 12:37:06,657 - INFO - ============================================================
+2025-03-13 12:37:06,689 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:08,689 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:08,689 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:08,689 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:08,690 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:08,690 - DEBUG - Waiting for response...
+2025-03-13 12:37:10,691 - WARNING - No response received within 2.0005s
+2025-03-13 12:37:10,691 - ERROR - No response to initialization command
+2025-03-13 12:37:10,977 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:10,977 - INFO - 
+============================================================
+2025-03-13 12:37:10,978 - INFO - Trying configuration: 9600 baud, 8O1
+2025-03-13 12:37:10,978 - INFO - ============================================================
+2025-03-13 12:37:11,009 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:13,009 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:13,010 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:13,010 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:13,011 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:13,011 - DEBUG - Waiting for response...
+2025-03-13 12:37:15,012 - WARNING - No response received within 2.0006s
+2025-03-13 12:37:15,012 - ERROR - No response to initialization command
+2025-03-13 12:37:15,297 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:15,297 - INFO - 
+============================================================
+2025-03-13 12:37:15,297 - INFO - Trying configuration: 9600 baud, 8N2
+2025-03-13 12:37:15,297 - INFO - ============================================================
+2025-03-13 12:37:15,329 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:17,329 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:17,330 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:17,330 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:17,330 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:17,330 - DEBUG - Waiting for response...
+2025-03-13 12:37:19,331 - WARNING - No response received within 2.0010s
+2025-03-13 12:37:19,332 - ERROR - No response to initialization command
+2025-03-13 12:37:19,616 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:19,616 - INFO - 
+============================================================
+2025-03-13 12:37:19,616 - INFO - Trying configuration: 9600 baud, 8E2
+2025-03-13 12:37:19,617 - INFO - ============================================================
+2025-03-13 12:37:19,648 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:50,285 - INFO - ============================================================
+2025-03-13 12:37:50,285 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:37:50,285 - INFO - ============================================================
+2025-03-13 12:37:50,286 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:37:50,286 - INFO - Date: 2025-03-13 12:37:50
+2025-03-13 12:37:50,286 - INFO - 
+============================================================
+2025-03-13 12:37:50,286 - INFO - Trying configuration: 9600 baud, 8N1
+2025-03-13 12:37:50,286 - INFO - ============================================================
+2025-03-13 12:37:50,316 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:50,316 - INFO - Flow control: RTS/CTS and DTR/DSR enabled
+2025-03-13 12:37:50,317 - INFO - DTR: False, RTS: False
+2025-03-13 12:37:52,317 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:52,317 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:52,317 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:52,317 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:52,318 - DEBUG - Waiting for response...
+2025-03-13 12:37:54,318 - WARNING - No response received within 2.0006s
+2025-03-13 12:37:54,319 - ERROR - No response to initialization command
+2025-03-13 12:37:54,593 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:54,593 - INFO - 
+============================================================
+2025-03-13 12:37:54,593 - INFO - Trying configuration: 9600 baud, 8E1
+2025-03-13 12:37:54,593 - INFO - ============================================================
+2025-03-13 12:37:54,625 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:54,625 - INFO - Flow control: RTS/CTS and DTR/DSR enabled
+2025-03-13 12:37:54,625 - INFO - DTR: False, RTS: False
+2025-03-13 12:37:56,625 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:37:56,625 - INFO - Step 1: Sending initialization command
+2025-03-13 12:37:56,625 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:37:56,626 - DEBUG - Wrote 26 bytes
+2025-03-13 12:37:56,626 - DEBUG - Waiting for response...
+2025-03-13 12:37:58,626 - WARNING - No response received within 2.0004s
+2025-03-13 12:37:58,626 - ERROR - No response to initialization command
+2025-03-13 12:37:58,913 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:37:58,913 - INFO - 
+============================================================
+2025-03-13 12:37:58,913 - INFO - Trying configuration: 9600 baud, 8O1
+2025-03-13 12:37:58,913 - INFO - ============================================================
+2025-03-13 12:37:58,945 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:37:58,945 - INFO - Flow control: RTS/CTS and DTR/DSR enabled
+2025-03-13 12:37:58,945 - INFO - DTR: False, RTS: False
+2025-03-13 12:38:00,945 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:38:00,945 - INFO - Step 1: Sending initialization command
+2025-03-13 12:38:00,945 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:38:00,946 - DEBUG - Wrote 26 bytes
+2025-03-13 12:38:00,946 - DEBUG - Waiting for response...
+2025-03-13 12:38:02,947 - WARNING - No response received within 2.0010s
+2025-03-13 12:38:02,947 - ERROR - No response to initialization command
+2025-03-13 12:38:03,233 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:38:03,233 - INFO - 
+============================================================
+2025-03-13 12:38:03,233 - INFO - Trying configuration: 9600 baud, 8N2
+2025-03-13 12:38:03,233 - INFO - ============================================================
+2025-03-13 12:38:03,265 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:38:03,265 - INFO - Flow control: RTS/CTS and DTR/DSR enabled
+2025-03-13 12:38:03,265 - INFO - DTR: False, RTS: False
+2025-03-13 12:38:05,265 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:38:05,265 - INFO - Step 1: Sending initialization command
+2025-03-13 12:38:05,266 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:38:05,266 - DEBUG - Wrote 26 bytes
+2025-03-13 12:38:05,266 - DEBUG - Waiting for response...
+2025-03-13 12:38:07,267 - WARNING - No response received within 2.0007s
+2025-03-13 12:38:07,267 - ERROR - No response to initialization command
+2025-03-13 12:38:07,557 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:38:07,557 - INFO - 
+============================================================
+2025-03-13 12:38:07,557 - INFO - Trying configuration: 9600 baud, 8E2
+2025-03-13 12:38:07,557 - INFO - ============================================================
+2025-03-13 12:38:07,589 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:38:07,589 - INFO - Flow control: RTS/CTS and DTR/DSR enabled
+2025-03-13 12:38:07,589 - INFO - DTR: False, RTS: False
+2025-03-13 12:38:39,550 - INFO - ============================================================
+2025-03-13 12:38:39,550 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:38:39,550 - INFO - ============================================================
+2025-03-13 12:38:39,550 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:38:39,551 - INFO - Date: 2025-03-13 12:38:39
+2025-03-13 12:38:39,551 - INFO - 
+============================================================
+2025-03-13 12:38:39,551 - INFO - Trying configuration: 9600 baud, 8N1
+2025-03-13 12:38:39,551 - INFO - ============================================================
+2025-03-13 12:38:39,581 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:38:39,581 - INFO - Attempting to sync with device...
+2025-03-13 12:38:39,582 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:39,582 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:39,582 - DEBUG - Waiting for response...
+2025-03-13 12:38:40,082 - WARNING - No response received within 0.5001s
+2025-03-13 12:38:40,583 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:40,583 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:40,583 - DEBUG - Waiting for response...
+2025-03-13 12:38:41,084 - WARNING - No response received within 0.5010s
+2025-03-13 12:38:41,585 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:41,585 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:41,585 - DEBUG - Waiting for response...
+2025-03-13 12:38:42,086 - WARNING - No response received within 0.5010s
+2025-03-13 12:38:44,587 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:38:44,587 - INFO - Step 1: Sending initialization command
+2025-03-13 12:38:44,587 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:38:44,587 - DEBUG - Wrote 26 bytes
+2025-03-13 12:38:44,587 - DEBUG - Waiting for response...
+2025-03-13 12:38:46,588 - WARNING - No response received within 2.0001s
+2025-03-13 12:38:46,588 - ERROR - No response to initialization command
+2025-03-13 12:38:46,881 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:38:46,881 - INFO - 
+============================================================
+2025-03-13 12:38:46,881 - INFO - Trying configuration: 9600 baud, 8E1
+2025-03-13 12:38:46,881 - INFO - ============================================================
+2025-03-13 12:38:46,913 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:38:46,913 - INFO - Attempting to sync with device...
+2025-03-13 12:38:46,913 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:46,913 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:46,914 - DEBUG - Waiting for response...
+2025-03-13 12:38:47,415 - WARNING - No response received within 0.5009s
+2025-03-13 12:38:47,915 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:47,916 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:47,916 - DEBUG - Waiting for response...
+2025-03-13 12:38:48,417 - WARNING - No response received within 0.5009s
+2025-03-13 12:38:48,917 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:48,918 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:48,918 - DEBUG - Waiting for response...
+2025-03-13 12:38:49,419 - WARNING - No response received within 0.5009s
+2025-03-13 12:38:51,919 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:38:51,919 - INFO - Step 1: Sending initialization command
+2025-03-13 12:38:51,919 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:38:51,920 - DEBUG - Wrote 26 bytes
+2025-03-13 12:38:51,920 - DEBUG - Waiting for response...
+2025-03-13 12:38:53,920 - WARNING - No response received within 2.0000s
+2025-03-13 12:38:53,920 - ERROR - No response to initialization command
+2025-03-13 12:38:54,209 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:38:54,209 - INFO - 
+============================================================
+2025-03-13 12:38:54,209 - INFO - Trying configuration: 9600 baud, 8O1
+2025-03-13 12:38:54,209 - INFO - ============================================================
+2025-03-13 12:38:54,241 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:38:54,241 - INFO - Attempting to sync with device...
+2025-03-13 12:38:54,241 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:54,242 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:54,242 - DEBUG - Waiting for response...
+2025-03-13 12:38:54,742 - WARNING - No response received within 0.5001s
+2025-03-13 12:38:55,242 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:55,243 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:55,243 - DEBUG - Waiting for response...
+2025-03-13 12:38:55,744 - WARNING - No response received within 0.5006s
+2025-03-13 12:38:56,244 - INFO - Sending sync command: 0x3C
+2025-03-13 12:38:56,245 - DEBUG - Wrote 1 bytes
+2025-03-13 12:38:56,245 - DEBUG - Waiting for response...
+2025-03-13 12:38:56,746 - WARNING - No response received within 0.5006s
+2025-03-13 12:58:23,770 - INFO - ============================================================
+2025-03-13 12:58:23,770 - INFO - Pan-Tilt Control Simulator - Initialization and Heartbeat
+2025-03-13 12:58:23,770 - INFO - ============================================================
+2025-03-13 12:58:23,770 - INFO - Version: 1.0.0 (Raspberry Pi 5)
+2025-03-13 12:58:23,770 - INFO - Date: 2025-03-13 12:58:23
+2025-03-13 12:58:23,770 - INFO - 
+============================================================
+2025-03-13 12:58:23,770 - INFO - Trying configuration: 9600 baud, 8N1
+2025-03-13 12:58:23,770 - INFO - ============================================================
+2025-03-13 12:58:23,790 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:58:23,790 - INFO - Attempting to sync with device...
+2025-03-13 12:58:23,790 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:23,791 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:23,791 - DEBUG - Waiting for response...
+2025-03-13 12:58:24,291 - WARNING - No response received within 0.5001s
+2025-03-13 12:58:24,791 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:24,792 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:24,792 - DEBUG - Waiting for response...
+2025-03-13 12:58:25,293 - WARNING - No response received within 0.5004s
+2025-03-13 12:58:25,793 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:25,794 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:25,794 - DEBUG - Waiting for response...
+2025-03-13 12:58:26,295 - WARNING - No response received within 0.5005s
+2025-03-13 12:58:28,795 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:58:28,795 - INFO - Step 1: Sending initialization command
+2025-03-13 12:58:28,795 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:58:28,796 - DEBUG - Wrote 26 bytes
+2025-03-13 12:58:28,796 - DEBUG - Waiting for response...
+2025-03-13 12:58:30,797 - WARNING - No response received within 2.0004s
+2025-03-13 12:58:30,797 - ERROR - No response to initialization command
+2025-03-13 12:58:31,072 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:58:31,072 - INFO - 
+============================================================
+2025-03-13 12:58:31,073 - INFO - Trying configuration: 9600 baud, 8E1
+2025-03-13 12:58:31,073 - INFO - ============================================================
+2025-03-13 12:58:31,104 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:58:31,104 - INFO - Attempting to sync with device...
+2025-03-13 12:58:31,105 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:31,105 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:31,105 - DEBUG - Waiting for response...
+2025-03-13 12:58:31,606 - WARNING - No response received within 0.5008s
+2025-03-13 12:58:32,107 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:32,107 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:32,107 - DEBUG - Waiting for response...
+2025-03-13 12:58:32,608 - WARNING - No response received within 0.5006s
+2025-03-13 12:58:33,109 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:33,109 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:33,109 - DEBUG - Waiting for response...
+2025-03-13 12:58:33,610 - WARNING - No response received within 0.5000s
+2025-03-13 12:58:36,110 - INFO - Waited 2 seconds for device to stabilize
+2025-03-13 12:58:36,110 - INFO - Step 1: Sending initialization command
+2025-03-13 12:58:36,110 - INFO - Sending initialization command: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 12:58:36,111 - DEBUG - Wrote 26 bytes
+2025-03-13 12:58:36,111 - DEBUG - Waiting for response...
+2025-03-13 12:58:38,112 - WARNING - No response received within 2.0010s
+2025-03-13 12:58:38,112 - ERROR - No response to initialization command
+2025-03-13 12:58:38,401 - INFO - Disconnected from /dev/ttyUSB0
+2025-03-13 12:58:38,401 - INFO - 
+============================================================
+2025-03-13 12:58:38,401 - INFO - Trying configuration: 9600 baud, 8O1
+2025-03-13 12:58:38,401 - INFO - ============================================================
+2025-03-13 12:58:38,433 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 12:58:38,433 - INFO - Attempting to sync with device...
+2025-03-13 12:58:38,433 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:38,434 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:38,434 - DEBUG - Waiting for response...
+2025-03-13 12:58:38,935 - WARNING - No response received within 0.5008s
+2025-03-13 12:58:39,435 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:39,436 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:39,436 - DEBUG - Waiting for response...
+2025-03-13 12:58:39,936 - WARNING - No response received within 0.5000s
+2025-03-13 12:58:40,436 - INFO - Sending sync command: 0x3C
+2025-03-13 12:58:40,437 - DEBUG - Wrote 1 bytes
+2025-03-13 12:58:40,437 - DEBUG - Waiting for response...
+2025-03-13 12:58:40,937 - WARNING - No response received within 0.5002s

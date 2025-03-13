@@ -1,0 +1,79 @@
+2025-03-13 13:09:57.553 - INFO - Pan-Tilt Protocol Analyzer started
+2025-03-13 13:09:57.554 - INFO - Opening serial port...
+2025-03-13 13:09:57.573 - INFO - Setting control lines to inactive state
+2025-03-13 13:09:57.577 - INFO - Connected to /dev/ttyUSB0 at 9600 baud
+2025-03-13 13:09:57.577 - DEBUG - DTR: False, RTS: False
+2025-03-13 13:09:58.578 - INFO - ======================================
+2025-03-13 13:09:58.578 - INFO - RUNNING PROTOCOL SEQUENCE
+2025-03-13 13:09:58.578 - INFO - ======================================
+2025-03-13 13:09:58.578 - INFO - Beginning initialization sequence attempts
+2025-03-13 13:09:58.578 - INFO - 
+Attempt 1: Sending original initialization command
+2025-03-13 13:09:58.578 - DEBUG - Sending wake-up sequence (not in capture, but may be required)
+2025-03-13 13:09:58.879 - DEBUG - Sending command with 5ms byte delay: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 13:09:58.880 - DEBUG - Sending start marker with extended delay
+2025-03-13 13:09:58.906 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:58.922 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:58.938 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:58.954 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:59.030 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:59.046 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:09:59.088 - DEBUG - Waiting for response (timeout: 2.0s)
+2025-03-13 13:10:01.094 - WARNING - No response received within 2.0s
+2025-03-13 13:10:01.094 - INFO - 
+Attempt 2: Toggling RTS/DTR lines before initialization
+2025-03-13 13:10:01.095 - DEBUG - Toggling RTS line
+2025-03-13 13:10:02.097 - DEBUG - Toggling DTR line
+2025-03-13 13:10:03.100 - DEBUG - Sending start marker (0x3C) after line toggle
+2025-03-13 13:10:03.601 - DEBUG - Sending command with 5ms byte delay: 0x3C 0x80 0x5C 0xC0 0x5C 0x70 0x5C 0x60 0x5C 0x82 0xCA 0xF8 0xF8 0x0C 0x0C 0x9C 0xCC 0xAC 0x9C 0x8C 0x8C 0x5C 0x78 0x5C 0xE2 0x7C
+2025-03-13 13:10:03.601 - DEBUG - Sending start marker with extended delay
+2025-03-13 13:10:03.628 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.644 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.660 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.676 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.751 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.767 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:03.808 - DEBUG - Waiting for response (timeout: 2.0s)
+2025-03-13 13:10:05.809 - WARNING - No response received within 2.0s
+2025-03-13 13:10:05.809 - INFO - 
+Attempt 3: Sending alternative initialization command
+2025-03-13 13:10:05.809 - DEBUG - Sending command with 5ms byte delay: 0x3C 0xC0 0x5C 0x80 0x5C 0xC0 0x5C 0x82 0xCA 0x5C 0x5C 0xC8 0x5C 0xE2 0x7C
+2025-03-13 13:10:05.810 - DEBUG - Sending start marker with extended delay
+2025-03-13 13:10:05.836 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.852 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.868 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.889 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.900 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.916 - DEBUG - Sent escape character 0x5C, using extended delay
+2025-03-13 13:10:05.957 - DEBUG - Waiting for response (timeout: 2.0s)
+2025-03-13 13:10:07.959 - WARNING - No response received within 2.0s
+2025-03-13 13:10:07.959 - INFO - 
+Attempt 4: Very slow byte-by-byte transmission
+2025-03-13 13:10:07.959 - DEBUG - Sending initialization bytes with 50ms delay between bytes
+2025-03-13 13:10:07.959 - DEBUG - Sending byte 1/26: 0x3C
+2025-03-13 13:10:08.010 - DEBUG - Sending byte 2/26: 0x80
+2025-03-13 13:10:08.061 - DEBUG - Sending byte 3/26: 0x5C
+2025-03-13 13:10:08.112 - DEBUG - Sending byte 4/26: 0xC0
+2025-03-13 13:10:08.163 - DEBUG - Sending byte 5/26: 0x5C
+2025-03-13 13:10:08.214 - DEBUG - Sending byte 6/26: 0x70
+2025-03-13 13:10:08.265 - DEBUG - Sending byte 7/26: 0x5C
+2025-03-13 13:10:08.316 - DEBUG - Sending byte 8/26: 0x60
+2025-03-13 13:10:08.367 - DEBUG - Sending byte 9/26: 0x5C
+2025-03-13 13:10:08.418 - DEBUG - Sending byte 10/26: 0x82
+2025-03-13 13:10:08.469 - DEBUG - Sending byte 11/26: 0xCA
+2025-03-13 13:10:08.520 - DEBUG - Sending byte 12/26: 0xF8
+2025-03-13 13:10:08.571 - DEBUG - Sending byte 13/26: 0xF8
+2025-03-13 13:10:08.622 - DEBUG - Sending byte 14/26: 0x0C
+2025-03-13 13:10:08.673 - DEBUG - Sending byte 15/26: 0x0C
+2025-03-13 13:10:08.724 - DEBUG - Sending byte 16/26: 0x9C
+2025-03-13 13:10:08.775 - DEBUG - Sending byte 17/26: 0xCC
+2025-03-13 13:10:08.826 - DEBUG - Sending byte 18/26: 0xAC
+2025-03-13 13:10:08.877 - DEBUG - Sending byte 19/26: 0x9C
+2025-03-13 13:10:08.928 - DEBUG - Sending byte 20/26: 0x8C
+2025-03-13 13:10:08.979 - DEBUG - Sending byte 21/26: 0x8C
+2025-03-13 13:10:09.030 - DEBUG - Sending byte 22/26: 0x5C
+2025-03-13 13:10:09.081 - DEBUG - Sending byte 23/26: 0x78
+2025-03-13 13:10:09.132 - DEBUG - Sending byte 24/26: 0x5C
+2025-03-13 13:10:09.183 - DEBUG - Sending byte 25/26: 0xE2
+2025-03-13 13:10:09.234 - DEBUG - Sending byte 26/26: 0x7C
+2025-03-13 13:10:09.285 - DEBUG - Waiting for response (timeout: 2.0s)
